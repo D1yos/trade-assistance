@@ -21,7 +21,7 @@ A desktop application designed for **Path of Exile 2** players to monitor curren
 ## Installation & Usage
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/poe2-trade-assistant.git](https://github.com/YOUR_USERNAME/trade-assistant.git)
+    git clone [https://github.com/D1yos/poe2-trade-assistant.git](https://github.com/YOUR_USERNAME/trade-assistant.git)
     ```
 2.  **Install dependencies:**
     ```bash
