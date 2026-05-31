@@ -3,6 +3,9 @@ from tkinter import messagebox
 from database import Database
 import logic
 import parser
+import logging
+
+logging.basicConfig(level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
 
 ctk.set_appearance_mode("dark")
 
@@ -243,11 +246,8 @@ class ArbitrageApp(ctk.CTk):
 
 
 if __name__ == "__main__":
-    auth = LoginWindow()
-    auth.mainloop()
     try:
-        auth.destroy()
         app = ArbitrageApp()
         app.mainloop()
-    except Exception:
-        pass
+    except Exception as e:
+        logging.exception("Crit Error: %s", e)
